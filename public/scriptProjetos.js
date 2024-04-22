@@ -35,13 +35,12 @@ $(document).ready(function(){
   });
 
 
+
+
 fetch('/api/github-repos')
   .then(response => response.json())
   .then(repos => {
-    // Verifica se repos é um array
-    if (!Array.isArray(repos)) {
-      throw new Error('Os repositórios não foram retornados como um array.');
-    }
+    console.log(repos); // Adicione esta linha para verificar o formato dos dados
 
     // Para cada repositório, cria um card e adiciona ao container de repositórios
     repos.forEach(repo => {

@@ -70,25 +70,16 @@ app.get('/api/github-repos', async (req, res) => {
   try {
     const response = await fetch('https://api.github.com/users/leoneloliveira/repos');
     const repos = await response.json();
-    // Mapeia os dados dos repositórios para extrair apenas os campos necessários
-    const formattedRepos = repos.map(repo => ({
-      id: repo.id,
-      name: repo.name,
-      description: repo.description,
-      html_url: repo.html_url
-      
-    }));
-    res.json(formattedRepos);
+    res.json(repos);
   } catch (error) {
     console.error('Erro ao obter os repositórios do GitHub:', error);
     res.status(500).json({ error: 'Erro ao obter os repositórios do GitHub' });
   }
 });
 
-
-// Rota para servir o arquivo index.html
+// Rota para enviar o arquivo index.html
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname,  'index.html'));
 });
 
 app.listen(PORT, () => {
