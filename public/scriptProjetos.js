@@ -37,7 +37,7 @@ $(document).ready(function(){
   
   fetch('/api/github-repos', {
     headers: {
-      Authorization: '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'
+      Authorization: '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'
     }
   })
   .then(response => response.json())
