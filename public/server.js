@@ -7,7 +7,9 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Servir arquivos estáticos do diretório 'public'
-app.use(express.static('public'));
+
+// Configurando o diretório raiz para o Express
+app.use(express.static(__dirname));
 
 
 
@@ -75,9 +77,9 @@ app.get('/api/github-repos', async (req, res) => {
   }
 });
 
-// Rota para enviar o arquivo index.html
+// Rota para servir o arquivo index.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, () => {
