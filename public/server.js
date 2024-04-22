@@ -4,9 +4,7 @@ const path = require('path'); // Importe o módulo path
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const app = express();
-const PORT = process.env.PORT || 3001;
-
-// Servir arquivos estáticos do diretório 'public'
+const PORT = process.env.PORT || 3002;
 
 // Configurando o diretório raiz para o Express
 app.use(express.static(__dirname));
