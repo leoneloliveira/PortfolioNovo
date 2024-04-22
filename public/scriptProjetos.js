@@ -34,13 +34,15 @@ $(document).ready(function(){
       $('.menu-btn i').toggleClass("active");
   });
 
+  
+// Obtém o elemento onde os repositórios serão adicionados
+const repositoriesContainer = document.getElementById('repositories');
 
-
-
+// Fetch para obter os repositórios do GitHub
 fetch('/api/github-repos')
   .then(response => response.json())
   .then(repos => {
-    console.log(repos); // Adicione esta linha para verificar o formato dos dados
+    console.log(repos); // Verifica o formato dos dados
 
     // Para cada repositório, cria um card e adiciona ao container de repositórios
     repos.forEach(repo => {
@@ -79,3 +81,4 @@ fetch('/api/github-repos')
   .catch(error => {
     console.error('Erro ao obter os repositórios do GitHub:', error);
   });
+
