@@ -182,8 +182,9 @@ section .title::after{
 .home .max-width .row{
   margin-right: 0;
 }
-.home .home-content .text-1{
+.home .home-content .text-1, .text-2, .text-3{
     font-size: 27px;
+    color: #111;
 }
 .home .home-content .text-2{
     font-size: 75px;
