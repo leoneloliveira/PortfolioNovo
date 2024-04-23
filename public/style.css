@@ -427,11 +427,11 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid #222;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
-    border-color: #fff;
+    border-color: crimson;
 }
 .owl-dots{
     text-align: center;
@@ -748,7 +748,7 @@ footer span a:hover{
 /* Estilo para o conteúdo do modal */
 .modal-content {
     background-color: #ffffff;
-    margin: 10% auto; 
+    margin: 50% auto; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1); 
@@ -795,3 +795,5 @@ footer span a:hover{
     text-decoration: none;
     cursor: pointer;
 }
+
+
