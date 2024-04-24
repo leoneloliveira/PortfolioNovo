@@ -132,7 +132,7 @@ section .title::after{
 .menu-btn{
     color: #fff;
     font-size: 23px;
-    cursor: pointer;
+    cursor: pointer;    
     display: none;
 }
 .scroll-up-btn{
@@ -610,6 +610,8 @@ footer span a:hover{
     .menu-btn i.active:before {
         content: "\f00d";
     }
+
+    
     
     .navbar .menu.active {
         left: 0;
@@ -670,7 +672,7 @@ footer span a:hover{
 
 @media (max-width: 690px) {
     .max-width {
-        padding: 0 23px;
+        padding: 0 5px;        
     }
     
     .home .home-content .text-2 {
@@ -690,7 +692,8 @@ footer span a:hover{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px) {   
+   
     .home .home-content .text-2 {
         font-size: 50px;
     }

@@ -371,8 +371,7 @@ footer span a:hover{
     .services .serv-content .card,
     .habilidades .conteudo-servico .cartao {
         width: calc(50% - 10px);
-        margin-bottom: 20
-        px;
+        margin-bottom: 20px;
     }
     .habilidades .conteudo-servico .column,
     .contact .contact-content .column{
