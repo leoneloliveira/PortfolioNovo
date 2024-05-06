@@ -125,7 +125,7 @@ section .title::after{
     color: crimson;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: #000;
 }
 
 /* Estilos do botão de menu */
