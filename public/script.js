@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // script de animação de texto digitado
     var typed = new Typed(".typing", {
-        strings: ["Desenvolvedor Web"," Assistente de Suporte e Manutenção de Computadores","Assistente de Operações de Rede de Computadores"],
+        strings: ["Desenvolvedor Web","Desenvolvedor Front-End"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: [ "Desenvolvedor Web"," Assistente de Operações de Rede de Computadores"," Assistente de Suporte e Manutenção de Computadores" ],
+        strings: [ "Desenvolvedor Web","Desenvolvedor Front-End" ],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
